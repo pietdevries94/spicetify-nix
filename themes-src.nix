@@ -1,6 +1,3 @@
-let
-  pkgs = import <nixpkgs> {};
-in
   pkgs.fetchFromGitHub {
     owner = "morpheusthewhite";
     repo = "spicetify-themes";
