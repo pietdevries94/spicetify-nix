@@ -1,5 +1,6 @@
 { 
   pkgs ? import <nixpkgs> {},
+  fetchFromGitHub,
   theme ? "SpicetifyDefault",
   colorScheme ? "",
   thirdParyThemes ? {},
