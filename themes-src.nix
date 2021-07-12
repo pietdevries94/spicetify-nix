@@ -1,4 +1,4 @@
-  pkgs.fetchFromGitHub {
+fetchFromGitHub {
     owner = "morpheusthewhite";
     repo = "spicetify-themes";
     rev = "fdadc4c1cfe38ecd22cf828d2c825e0af1dcda9f";
