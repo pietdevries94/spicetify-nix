@@ -1,3 +1,11 @@
+# DEPRICATED
+
+I have not worked on this project for a long while, due to personal reasons. Thankfully the-argus has made a fork with in his own words the next features:
+
+> It supplies a home manager module to flake-based configurations, as well as packaging for many different themes and extensions. If you are trying to get spicetify working on NixOS, use that.
+
+Please start using it here: https://github.com/the-argus/spicetify-nix
+
 # Spicetify-Nix
 
 Modifies Spotify using [spicetify-cli](https://github.com/khanhas/spicetify-cli).
