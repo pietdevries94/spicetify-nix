@@ -1,5 +1,6 @@
 { 
   pkgs ? import <nixpkgs> {},
+  fetchFromGitHub,
   theme ? "SpicetifyDefault",
   colorScheme ? "",
   thirdParyThemes ? {},
@@ -40,7 +41,13 @@ let
   spicetifyPkg = pkgs.callPackage ./spicetify.nix {};
   spicetify = "SPICETIFY_CONFIG=. ${spicetifyPkg}/spicetify";
 
-  themes = import ./themes-src.nix;
+  themes = fetchFromGitHub {
+    owner = "morpheusthewhite";
+    repo = "spicetify-themes";
+    rev = "fdadc4c1cfe38ecd22cf828d2c825e0af1dcda9f";
+    sha256 = "1k44g8rmf8bh4kk16w4n9z1502ag3w67ad3jx28327ykq8pq5w29";
+    fetchSubmodules = true;
+  };
 
   # Dribblish is a theme which needs a couple extra settings
   isDribblish = theme == "Dribbblish";
